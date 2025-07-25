@@ -33,7 +33,7 @@ GitHub data is fetched in the `/github` route using a loader from:
 
 ## 🌍 Live Demo
 
-🔗 **[View Live on Vercel](#)**
+🔗 **[View Live on Vercel](https://re-router.vercel.app/)**
 
 ---
 
