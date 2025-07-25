@@ -13,17 +13,17 @@ import About from "./Components/About.jsx";
 import Contact from "./Components/Contact.jsx";
 import User from "./Components/User.jsx";
 import Github, { githubProfile } from "./Components/Github.jsx";
+import NotFound from "./Components/NotFound.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<Home />} />
+      <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
-      <Route
-      loader={githubProfile}
-      path="github" element={<Github />} />
+      <Route loader={githubProfile} path="github" element={<Github />} />
       <Route path="user/:id" element={<User />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
